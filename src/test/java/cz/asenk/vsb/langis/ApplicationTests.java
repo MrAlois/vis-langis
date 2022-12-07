@@ -1,13 +1,13 @@
-package cz.asenk.langis;
+package cz.asenk.vsb.langis;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class VisLangisApplicationTests {
+class ApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+	@Test
+	void contextLoads() {
+	}
 
 }

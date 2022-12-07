@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    open-in-view: false
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/lang_is
+    password: root
+    username: root
+
+server:
+  port: 8090
