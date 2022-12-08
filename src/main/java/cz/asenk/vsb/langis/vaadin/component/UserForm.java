@@ -1,4 +1,4 @@
-package cz.asenk.vsb.langis.component;
+package cz.asenk.vsb.langis.vaadin.component;
 
 import com.vaadin.flow.component.ComponentEvent;
 import com.vaadin.flow.component.ComponentEventListener;
@@ -14,7 +14,7 @@ import com.vaadin.flow.data.binder.Binder;
 import com.vaadin.flow.data.binder.ValidationException;
 import com.vaadin.flow.shared.Registration;
 
-import cz.asenk.vsb.langis.jpa.model.User;
+import cz.asenk.vsb.langis.jpa.domain.User;
 import lombok.AccessLevel;
 import lombok.Getter;
 

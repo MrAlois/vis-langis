@@ -1,4 +1,4 @@
-package cz.asenk.vsb.langis.views;
+package cz.asenk.vsb.langis.vaadin.views;
 
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;

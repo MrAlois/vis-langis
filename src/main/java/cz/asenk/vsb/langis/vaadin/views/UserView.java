@@ -1,4 +1,4 @@
-package cz.asenk.vsb.langis.views;
+package cz.asenk.vsb.langis.vaadin.views;
 
 import javax.annotation.security.PermitAll;
 
@@ -12,9 +12,9 @@ import com.vaadin.flow.data.value.ValueChangeMode;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
-import cz.asenk.vsb.langis.component.UserForm;
-import cz.asenk.vsb.langis.jpa.model.User;
+import cz.asenk.vsb.langis.jpa.domain.User;
 import cz.asenk.vsb.langis.service.UserService;
+import cz.asenk.vsb.langis.vaadin.component.UserForm;
 
 @Route(value = "", layout = MainLayout.class)
 @PageTitle("Users | VIS IS")

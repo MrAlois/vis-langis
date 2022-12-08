@@ -1,4 +1,4 @@
-package cz.asenk.vsb.langis.jpa.model;
+package cz.asenk.vsb.langis.jpa.domain;
 
 import java.time.LocalDate;
 

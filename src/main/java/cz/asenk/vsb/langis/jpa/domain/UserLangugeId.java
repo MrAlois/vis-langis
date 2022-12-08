@@ -1,4 +1,4 @@
-package cz.asenk.vsb.langis.jpa.model;
+package cz.asenk.vsb.langis.jpa.domain;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -14,33 +14,35 @@ import org.hibernate.Hibernate;
 import lombok.Getter;
 import lombok.Setter;
 
-@Setter
 @Getter
-@Embeddable
-public class UserCourseId implements Serializable {
-    @Serial
-    private static final long serialVersionUID = -2204344327324828411L;
+@Setter
 
+@Embeddable
+public class UserLangugeId implements Serializable {
+    @Serial
+    private static final long serialVersionUID = -8332847139823173795L;
     @Size(max = 32)
     @NotNull
     @Column(name = "user_id", nullable = false, length = 32)
     private String userId;
 
+    @Size(max = 32)
     @NotNull
-    @Column(name = "course_id", nullable = false)
-    private Integer courseId;
+    @Column(name = "language_name", nullable = false, length = 32)
+    private String languageName;
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
-        UserCourseId entity = (UserCourseId) o;
+        UserLangugeId entity = (UserLangugeId) o;
         return Objects.equals(this.userId, entity.userId) &&
-                Objects.equals(this.courseId, entity.courseId);
+                Objects.equals(this.languageName, entity.languageName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(userId, courseId);
+        return Objects.hash(userId, languageName);
     }
+
 }

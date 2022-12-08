@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull;
 
 import org.springframework.stereotype.Service;
 
-import cz.asenk.vsb.langis.jpa.model.User;
+import cz.asenk.vsb.langis.jpa.domain.User;
 import cz.asenk.vsb.langis.jpa.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
