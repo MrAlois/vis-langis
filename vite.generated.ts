@@ -12,14 +12,14 @@ import {processThemeResources} from './build/plugins/application-theme-plugin/th
 import {rewriteCssUrls} from './build/plugins/theme-loader/theme-loader-utils';
 import settings from './build/vaadin-dev-server-settings.json';
 import {
-  AssetInfo,
-  ChunkInfo,
-  defineConfig,
-  mergeConfig,
-  OutputOptions,
-  PluginOption,
-  ResolvedConfig,
-  UserConfigFn
+    AssetInfo,
+    ChunkInfo,
+    defineConfig,
+    mergeConfig,
+    OutputOptions,
+    PluginOption,
+    ResolvedConfig,
+    UserConfigFn
 } from 'vite';
 import {getManifest} from 'workbox-build';
 

@@ -23,12 +23,11 @@ import lombok.extern.slf4j.Slf4j;
 public class UserService {
     final UserRepository userRepository;
 
-    public List<User> findAllUsers(){
-        return userRepository.findAll();
-    }
+    public List<User> findAllUsersFilter(String filter){
+        if (filter == null || filter.isEmpty())
+            return userRepository.findAll();
 
-    public Long countAllUsers(){
-        return userRepository.count();
+        return userRepository.search(filter);
     }
 
     public void saveUser(@NotNull User user) {
