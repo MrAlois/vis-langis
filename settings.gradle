@@ -1,10 +1,11 @@
 rootProject.name = 'langis'
 
-registerProjectServer('server')
-registerProjectServer('website')
+registerModule('server')
+registerModule('website')
+registerModule('server-api')
 
-def registerProjectServer(String moduleName) {
-    registerProject(moduleName, 'workers/')
+def registerModule(String moduleName) {
+    registerProject(moduleName, 'modules/')
 }
 
 def registerProject(String moduleName, String location) {
