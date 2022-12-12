@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    open-in-view: false
+    generate-ddl: true
+    show-sql: true
+    database: mysql
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/lang_is
+    password: root
+    username: root
+
+server:
+  port: 8090
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
